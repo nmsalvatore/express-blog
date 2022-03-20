@@ -8,21 +8,18 @@
     <title>login | nmsalvatore.com</title>
 </head>
 <body class="dark-mode flex column jc-center ai-center">
-    <form action="/login" method="POST">
-        <div class="form-element">
-            <input 
-                type="text" 
-                id="username" 
-                name="username" 
-                placeholder="Username"/>
-        </div>
-        <div class="form-element">
-            <input 
-                type="password" 
-                id="password" 
-                name="password" 
-                placeholder="Password" />
-        </div>
+    <form action="/admin/login" method="POST" class="flex column">
+        <input required
+            type="text" 
+            id="username" 
+            name="username" 
+            placeholder="Username"/>
+        <input required
+            type="password" 
+            id="password" 
+            name="password" 
+            placeholder="Password" />
+        <input type="submit" value="Login" />
     </form>
 </body>
 </html>
